@@ -75,7 +75,8 @@ h1:hover {
 }
 
 .header_logo p {
-    margin-top: 10px;
+    margin-top: 9px;
+    margin-left: 5px;
     font-family: 'Arial';
     font-weight: 400;
     font-size: 13px;
@@ -87,16 +88,16 @@ h1:hover {
 .nav_menu {
     display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: stretch;
 }
 
 .nav_item {
+    margin: 15px 0px 16px 30px;
     font-family: 'Arial';
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
     color: #CDCDCD;
-    margin: 16px 0px 17px 36px;
 }
 
 .item_active {
@@ -127,13 +128,13 @@ h1:hover {
 h2 {
     margin-top: 0;
     margin-bottom: 0;
-    margin-right: 150px;
+    margin-right: 100px;
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
     color: #FFFFFF;
-    text-align: justify;
+    text-align: left;
 }
 
 .not_only_textblock p {

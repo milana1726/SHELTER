@@ -24,7 +24,7 @@ html {
 
 body {
     margin: auto;
-    width: 1280px;
+    max-width: 1280px;
     position: relative;
     overflow-x: hidden;
     background-color: #545454;
@@ -193,8 +193,13 @@ h2 {
 }
 
 .about_textblock {
-    width: 430px;
-    height: 380px;
+    margin: 14px 175px 0 120px;
+}
+
+.about_image {
+    width: 300px;
+    height: 408px;
+    margin-left: 175px;
 }
 
 h3 {

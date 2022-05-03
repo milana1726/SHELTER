@@ -113,7 +113,7 @@ h1:hover {
 
 /* -----NOT ONLY BLOCK----- */
 .not_only_content {
-    margin-top: 48px;
+    margin-top: 47px;
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -365,7 +365,7 @@ h4 {
 }
 
 .help_content h3 {
-    margin: 0 440px 60px 440px;
+    margin: 0 430px 60px 430px;
     text-align: center;
 }
 

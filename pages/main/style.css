@@ -76,8 +76,8 @@ h1:hover {
 }
 
 .header_logo p {
-    margin-top: 8px;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-left: 4px;
     font-family: 'Arial';
     font-weight: 400;
     font-size: 13px;
@@ -113,21 +113,21 @@ h1:hover {
 
 /* -----NOT ONLY BLOCK----- */
 .not_only_content {
-    margin-top: 49px;
+    margin-top: 48px;
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
 .not_only_textblock {
-    margin: 150px 22px 0px 10px;
+    margin: 162px 22px 0px 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 h2 {
-    margin: 0px 100px 0px 0px;
+    margin: 0px 100px 0px 2px;
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 44px;
@@ -137,7 +137,7 @@ h2 {
 }
 
 .not_only_textblock p {
-    margin-top: 42px;
+    margin-top: 43px;
     margin-bottom: 42px;
     font-family: 'Arial';
     font-weight: 400;
@@ -291,7 +291,7 @@ h3 {
 }
 
 h4 {
-    margin-top: 30px;
+    margin-top: 32px;
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 20px;
@@ -374,7 +374,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     column-gap: 120px;
-    row-gap: 45px;
+    row-gap: 40px;
     justify-content: center;
     align-items: center;
 }

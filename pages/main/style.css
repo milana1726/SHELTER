@@ -113,14 +113,14 @@ h1:hover {
 
 /* -----NOT ONLY BLOCK----- */
 .not_only_content {
-    margin-top: 47px;
+    margin-top: 49px;
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
 .not_only_textblock {
-    margin: 160px 22px 0px 10px;
+    margin: 150px 22px 0px 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -190,7 +190,7 @@ h2 {
 }
 
 .about_textblock {
-    margin: 0px 175px 12px 125px;
+    margin: 0px 175px 12px 120px;
     padding: 0;
 }
 
@@ -219,6 +219,7 @@ h3 {
     font-size: 15px;
     line-height: 160%;
     color: #4C4C4C;
+    text-align: left;
 }
 
 /* -----OUR FRIENDS BLOCK----- */
@@ -373,7 +374,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     column-gap: 120px;
-    row-gap: 35px;
+    row-gap: 45px;
     justify-content: center;
     align-items: center;
 }

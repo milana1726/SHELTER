@@ -179,7 +179,7 @@ h2 {
 .about_block {
     background-color: #FFFFFF;
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     align-items: center;
 }
 
@@ -191,7 +191,7 @@ h2 {
 }
 
 .about_textblock {
-    margin: 14px 180px 12px 115px;
+    margin: 14px 175px 12px 120px;
     padding: 0;
 }
 
@@ -401,7 +401,7 @@ h4 {
 .in_addition_block {
     background-color: #F6F6F6;
     padding-top: 80px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
 }
 
 .in_addition_content {

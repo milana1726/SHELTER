@@ -120,7 +120,7 @@ h1:hover {
 }
 
 .not_only_textblock {
-    margin: 162px 22px 0px 9px;
+    margin: 162px 32px 0px 9px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -424,7 +424,7 @@ h4 {
 
 .in_addition_textblock h3 {
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 h5 {
@@ -435,7 +435,7 @@ h5 {
     color: #545454;
     letter-spacing: 0.06em;
     margin-top: 19px;
-    margin-bottom: 0;;
+    margin-bottom: 0px;
 }
 
 .button_card {
@@ -464,7 +464,7 @@ h5 {
 }
 
 .in_addition_textblock p {
-    margin-top: 0;
+    margin-top: 0px;
     font-family: 'Arial';
     font-style: italic;
     font-weight: 400;
@@ -483,10 +483,10 @@ footer {
 .footer_content {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 37px;
 }
 
-.footer_image {
+.footer_image img{
     width: 300px;
     height: 310px;
 }
@@ -503,7 +503,12 @@ footer {
     margin-right: 120px;
 }
 
-.contacts h3,
+.contacts h3 {
+    margin-top: 16px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
 .locations h3 {
     margin-top: 16px;
     color: #FFFFFF;
@@ -512,12 +517,12 @@ footer {
 
 .contacts h4 {
     margin-left: 20px;
+    margin-bottom: 22px;
     color: #F1CDB3;
 }
 
 .locations h4 {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 22px 0px 19px 20px;
     color: #F1CDB3;
 }
 
@@ -525,5 +530,8 @@ footer {
 .locations a {
     display: flex;
     align-items: center;
-    margin: 0;
+}
+
+.contacts img {
+    margin-top: 5px;
 }

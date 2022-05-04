@@ -127,7 +127,7 @@ h1:hover {
 }
 
 h2 {
-    margin: 0px 100px 0px 2px;
+    margin: 0px 100px 0px 0px;
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 44px;
@@ -173,13 +173,11 @@ h2 {
     height: 728px;
 }
 
-
-
 /* -----ABOUT BLOCK----- */
 .about_block {
     background-color: #FFFFFF;
     padding-top: 80px;
-    padding-bottom: 90px;
+    padding-bottom: 80px;
     align-items: center;
 }
 
@@ -371,7 +369,7 @@ h4 {
 }
 
 .help_content h3 {
-    margin: 0 430px 55px 430px;
+    margin: 0 430px 60px 430px;
     text-align: center;
 }
 
@@ -484,6 +482,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 38px;
+    margin-left: 5px;
 }
 
 .footer_image img{
@@ -504,7 +503,7 @@ footer {
 }
 
 .contacts h3 {
-    margin-top: 16px;
+    margin-top: 15px;
     color: #FFFFFF;
     margin-bottom: 15px;
 }

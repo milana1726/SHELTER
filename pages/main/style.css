@@ -120,7 +120,7 @@ h1:hover {
 }
 
 .not_only_textblock {
-    margin: 162px 32px 0px 9px;
+    margin: 160px 32px 0px 9px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -178,8 +178,8 @@ h2 {
 /* -----ABOUT BLOCK----- */
 .about_block {
     background-color: #FFFFFF;
-    padding-top: 94px;
-    padding-bottom: 88px;
+    padding-top: 80px;
+    padding-bottom: 100px;
     align-items: center;
 }
 
@@ -191,14 +191,13 @@ h2 {
 }
 
 .about_textblock {
-    margin: 0px 175px 12px 120px;
+    margin: 14px 180px 12px 115px;
     padding: 0;
 }
 
 .about_image {
     width: 300px;
     height: 408px;
-    margin-top: -15px;
     margin-left: 180px;
     align-items: center;
 }
@@ -226,6 +225,8 @@ h3 {
 /* -----OUR FRIENDS BLOCK----- */
 .our_friends_block {
     background-color: #F6F6F6;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .our_friends_content {
@@ -237,7 +238,7 @@ h3 {
 }
 
 .our_friends_content h3{
-    margin: 80px 390px 60px 390px;
+    margin: 0 390px 60px 390px;
     text-align: center;
 }
 
@@ -337,7 +338,6 @@ h4 {
 
 .button_rest {
     margin-top: 60px;
-    margin-bottom: 100px;
     width: 261px;
     height: 52px;
     border: none;
@@ -360,8 +360,7 @@ h4 {
 /* -----HELP BLOCK----- */
 .help_block {
     background-color: #FFFFFF;
-    padding-top: 77px;
-    padding-bottom: 70px;
+    padding-top: 80px;
 }
 
 .help_content {
@@ -372,7 +371,7 @@ h4 {
 }
 
 .help_content h3 {
-    margin: 0 430px 60px 430px;
+    margin: 0 430px 55px 430px;
     text-align: center;
 }
 
@@ -383,6 +382,7 @@ h4 {
     row-gap: 30px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .help_item {
@@ -400,8 +400,8 @@ h4 {
 /* ----- IN ADDITION BLOCK ----- */
 .in_addition_block {
     background-color: #F6F6F6;
-    padding-top: 81px;
-    padding-bottom: 84px;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .in_addition_content {
@@ -483,7 +483,7 @@ footer {
 .footer_content {
     display: flex;
     justify-content: space-between;
-    padding-top: 37px;
+    padding-top: 38px;
 }
 
 .footer_image img{

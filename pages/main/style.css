@@ -282,6 +282,7 @@ h3 {
 }
 
 .pet_card:hover {
+    background-color: #FFFFFF;
     border: 3px solid #F1CDB3;
     cursor: pointer;
 }

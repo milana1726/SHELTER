@@ -104,6 +104,7 @@ h1:hover {
 
 .item_active {
     border-bottom: 3px solid #F1CDB3;
+    color: #FAFAFA;
 }
 
 .nav_item:hover {
@@ -482,7 +483,6 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 38px;
-    margin-left: 5px;
 }
 
 .footer_image img{
@@ -493,13 +493,14 @@ footer {
 .contacts {
     display: flex;
     flex-direction: column;
-    margin-right: 80px;
+    margin-left: 8px;
+    margin-right: 81px;
 }
 
 .locations {
     display: flex;
     flex-direction: column;
-    margin-right: 120px;
+    margin-right: 110px;
 }
 
 .contacts h3 {
@@ -516,12 +517,12 @@ footer {
 
 .contacts h4 {
     margin-left: 20px;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     color: #F1CDB3;
 }
 
 .locations h4 {
-    margin: 22px 0px 19px 20px;
+    margin: 22px 0px 18px 20px;
     color: #F1CDB3;
 }
 

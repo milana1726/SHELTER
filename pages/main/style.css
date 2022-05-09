@@ -482,12 +482,13 @@ footer {
 .footer_content {
     display: flex;
     justify-content: space-between;
-    padding-top: 38px;
+    padding-top: 40px;
 }
 
 .footer_image img{
     width: 300px;
     height: 310px;
+    display: block;
 }
 
 .contacts {
@@ -510,7 +511,7 @@ footer {
 }
 
 .locations h3 {
-    margin-top: 16px;
+    margin-top: 15px;
     color: #FFFFFF;
     margin-bottom: 10px;
 }

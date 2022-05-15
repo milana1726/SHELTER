@@ -230,6 +230,11 @@ h4 {
     border: 2px solid #CDCDCD;
 }
 
+.button_disabled {
+    border: 2px solid #CDCDCD;
+    cursor: default;
+}
+
 .button_page {
     background: #F1CDB3;
     border: none;

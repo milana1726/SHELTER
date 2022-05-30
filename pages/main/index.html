@@ -11,11 +11,22 @@
     <div class="main_wrapper">
         <div class="wrapper">
             <header>
-                <div class="header_logo">
+                    <div class="header_logo">
                     <a href="../main/index.html"><h1>Cozy House</h1></a>
                     <p>Shelter for pets in Boston</p>
                 </div>
-                <nav>
+                <nav id="nav_hidden">
+                    <div class="nav_menu_hidden">
+                        <a class="nav_item_hidden item_active" href="#about_block">About the shelter</a>
+                        <a class="nav_item_hidden " href="../pets/index.html">Our pets</a>
+                        <a class="nav_item_hidden " href="#help_block">Help the shelter</a>
+                        <a class="nav_item_hidden " href="#contacts_block">Contacts</a>
+                    </div>
+                </nav>
+                <a href="javascript:void(0);" id="icon_nav_hidden" onclick="myFunction()">
+                    <img src="../../assets/icons/Burger.svg" alt="icon_burger">
+                </a>
+                <nav id="nav_origin">
                     <div class="nav_menu">
                         <a class="nav_item item_active" href="#about_block">About the shelter</a>
                         <a class="nav_item" href="../pets/index.html">Our pets</a>
@@ -84,16 +95,29 @@
                                 <h4>Katrine</h4>
                                 <button type="button" onclick="" class="button_more">Learn more</button>
                             </div>
-                            <div class="pet_card card_space">
+                            <div class="pet_card card_space space">
                                 <img src="../../assets/images/pets-jennifer.png" alt="pet_photo">
                                 <h4>Jennifer</h4>
                                 <button type="button" onclick="" class="button_more">Learn more</button>
                             </div>
-                            <div class="pet_card">
+                            <div id = "hide" class="pet_card">
                                 <img src="../../assets/images/pets-woody.png" alt="pet_photo">
                                 <h4>Woody</h4>
                                 <button type="button" onclick="" class="button_more">Learn more</button>
                             </div>
+                            <button type="button" onclick="" class="arrow_right">
+                                <img class="arrow" src="../../assets/icons/arrow_right.svg" alt="arrow_right">
+                            </button>
+                        </div>
+                        <div class="slider_pets_hidden">
+                            <div class="pet_card">
+                                <img src="../../assets/images/pets-katrine.png" alt="pet_photo">
+                                <h4>Katrine</h4>
+                                <button type="button" onclick="" class="button_more">Learn more</button>
+                            </div>
+                            <button type="button" onclick="" class="arrow_left">
+                                <img class="arrow" src="../../assets/icons/arrow_left.svg" alt="arrow_left">
+                            </button>
                             <button type="button" onclick="" class="arrow_right">
                                 <img class="arrow" src="../../assets/icons/arrow_right.svg" alt="arrow_right">
                             </button>
@@ -139,7 +163,7 @@
                                 <h4>Medicines</h4>
                             </div>
                             <div class="help_item">
-                                <img class = "collar_image" src="../../assets/icons/collars-or-leashes.png" alt="help_collars">
+                                <img src="../../assets/icons/collars-or-leashes.png" alt="help_collars">
                                 <h4>Collars / leashes</h4>
                             </div>
                             <div class="help_item">
@@ -176,29 +200,32 @@
         <footer>
             <div class="wrapper">
                 <div class="footer_content" id="contacts_block">
-                    <div class="contacts">
-                        <h3>For questions and suggestions</h3>
-                        <a href="mailto:email@shelter.com">
-                            <img src="../../assets/icons/icon-email.svg" alt="email_icon">
-                            <h4>email@shelter.com</h4>
-                        </a>
-                        <a href="tel:+136745677554">
-                            <img src="../../assets/icons/icon-phone.svg" alt="phone_icon">
-                            <h4 class="item_down">+13 674 567 75 54</h4>
-                        </a>
+                    <div class="text_block">
+                        <div class="contacts">
+                            <h3>For questions and suggestions</h3>
+                            <a href="mailto:email@shelter.com">
+                                <img src="../../assets/icons/icon-email.svg" alt="email_icon">
+                                <h4>email@shelter.com</h4>
+                            </a>
+                            <a href="tel:+136745677554">
+                                <img src="../../assets/icons/icon-phone.svg" alt="phone_icon">
+                                <h4 class="item_down">+13 674 567 75 54</h4>
+                            </a>
+                        </div>
+                        <div class="locations">
+                            <h3>We are waiting for your visit</h3>
+                            <a href="https://goo.gl/maps/VvgoRG4mPdcsKyez8" target="_blank">
+                                <img src="../../assets/icons/pin.png" alt="location_icon">
+                                <h4>1 Central Street, Boston (entrance from the store)</h4>
+                            </a>
+                            <a href="https://goo.gl/maps/RBUScuRSC5gRVGxF7" target="_blank">
+                                <img src="../../assets/icons/pin.png" alt="location_icon">
+                                <h4 class="item_down">18 South Park, London</h4>
+                            </a>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="locations">
-                        <h3>We are waiting for your visit</h3>
-                        <a href="https://goo.gl/maps/VvgoRG4mPdcsKyez8" target="_blank">
-                            <img src="../../assets/icons/pin.png" alt="location_icon">
-                            <h4>1 Central Street, Boston (entrance from the store)</h4>
-                        </a>
-                        <a href="https://goo.gl/maps/RBUScuRSC5gRVGxF7" target="_blank">
-                            <img src="../../assets/icons/pin.png" alt="location_icon">
-                            <h4 class="item_down">18 South Park, London</h4>
-                        </a>
-                        </ul>
-                    </div>
+                <div class="contacts">
                     <div class="footer_image">
                         <img src="../../assets/images/footer-puppy.png" alt="footer_image">
                     </div>
@@ -206,4 +233,6 @@
             </div>
         </footer>
     </div>
+    <script src="./script.js"></script>
 </body>
+</html>

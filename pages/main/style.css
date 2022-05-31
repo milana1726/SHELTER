@@ -87,7 +87,6 @@ h1:hover {
 }
 
 .nav_menu {
-    /* margin-right: -5px; */
     display: flex;
 	flex-direction: row;
 	align-items: stretch;

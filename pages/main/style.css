@@ -56,7 +56,6 @@ header {
 }
 
 .header_logo {
-    /* margin-left: 9px; */
     padding: 0;
 }
 
@@ -86,6 +85,10 @@ h1:hover {
     letter-spacing: 0.1em;
 }
 
+#nav_hidden, #icon_nav_hidden {
+    display: none;
+}
+
 .nav_menu {
     display: flex;
 	flex-direction: row;
@@ -112,10 +115,9 @@ h1:hover {
 }
 
 
-#nav_hidden, #icon_nav_hidden{
+.burger_menu {
     display: none;
 }
-
 
 /* -----NOT ONLY BLOCK----- */
 .not_only_content {
@@ -262,6 +264,10 @@ h3 {
     margin-left: 10px;
 }
 
+.slider_pets_container {
+    display: flex;
+}
+
 .arrow_left {
     height: 52px;
     width: 52px;
@@ -300,8 +306,13 @@ h3 {
     cursor: pointer;
 }
 
-.card_space {
+.pet_card:nth-child(1),
+.pet_card:nth-child(2) {
     margin-right: 90px;
+}
+
+#btn_hidden {
+    display: none;
 }
 
 .pet_card img {
@@ -369,6 +380,126 @@ h4 {
     transition: all 0.5s ease-in;
 }
 
+/* -----Modal window----- */
+
+#modal_container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(41, 41, 41, 0.6);
+    z-index: 2;
+    text-align: center;
+    color: #353a3f;
+}
+
+#modal_container.visible {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#more_container {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 500px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.modal_close {
+    position: absolute;
+    top: -11%;
+    right: -5.5%;
+    border-radius: 50%;
+    background: transparent;
+    width: 52px;
+    height: 52px;
+    align-self: center;
+    border: 2px solid #F1CDB3;
+    font-size: 42px;
+    font-weight: lighter;
+    text-align: center;
+    color: #292929;
+    transform: rotate(45deg);
+    transition: all 0.6s;
+}
+
+.modal_close:hover {
+    cursor: pointer;
+    background-color: #FDDCC4;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+    text-align: center;
+    transform: rotate(135deg);
+}
+
+.pet_description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description_img img {
+    width: 500px;
+}
+
+.description_content {
+    width: 351px;
+    padding: 50px 20px 88px 29px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #000000;
+    text-align: left;
+}
+
+.description_name {
+    font-size: 35px;
+    line-height: 130%;
+    margin-bottom: 0;
+}
+
+.description_type {
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 115%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+}
+
+.description_more {
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 110%;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+li {
+    color: #F1CDB3;;
+    list-style-type: disc;
+    padding-bottom: 11px;
+}
+
+li span {
+    color: #000000;
+};
+
+.information {
+    font-size: 15px;
+    line-height: 110%;
+    color: #000000;
+    margin-left: -25px;
+}
+
 /* -----HELP BLOCK----- */
 .help_block {
     background-color: #FFFFFF;
@@ -380,7 +511,6 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-left: 18px; */
 }
 
 .help_content h3 {
@@ -669,14 +799,6 @@ footer .text_block {
         text-align: center;
     }
 
-    #hide {
-        display: none;
-    }
-
-    .slider_pets_hidden {
-        display: none;
-    }
-
     .slider_pets {
         margin-right: 10px;
         margin-left: 10px;
@@ -693,11 +815,12 @@ footer .text_block {
         margin-left: 13px;
     }
 
-    .card_space {
+    .pet_card:nth-child(1) {
         margin-right: 0px;
     }
 
-    .space {
+    .pet_card:nth-child(2) {
+        margin-right: 0px;
         padding-left: 40px;
     }
 
@@ -705,6 +828,41 @@ footer .text_block {
         width: 270px;
         height: 270px;
         display: block;
+    }
+
+    /* -----Modal window----- */
+
+    #more_container {
+        width: 682px;
+        height: 402px;
+    }
+
+    .modal_close {
+        position: absolute;
+        top: -13%;
+        right: -7.5%;
+    }
+
+    .description_img img {
+        width: 350px;
+    }
+
+    .description_content {
+        width: 280px;
+        padding: 0px 10px 88px 9px;
+    }
+
+    .description_name {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .description_type {
+        padding-bottom: 0px;
+    }
+
+    li {
+        margin-left: -25px;
     }
 
     /* -----HELP BLOCK----- */
@@ -861,10 +1019,18 @@ footer .text_block {
 
     }
 
+    .nav_menu_hidden {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+        height: 823px;
+        background: #292929;
+
+    }
+
     .main_wrapper {
         padding-top: 30px;
-        /* background: url(../../assets/images/main_background_320.png);
-        background-repeat: no-repeat; */
     }
 
     .wrapper {
@@ -948,6 +1114,7 @@ footer .text_block {
 
     h3 {
         margin-left: 20px;
+        margin-right: 0;
         font-size: 25px;
         text-align: center;
     }
@@ -977,17 +1144,24 @@ footer .text_block {
         text-align: center;
     }
 
-    .slider_pets_hidden {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 40px 10px 0px 10px;
+    #btn_hidden {
+        display: block;
+    }
+    
+    #btn_active {
+        display: none;
     }
 
     .slider_pets {
-        display: none;
+        max-width: 207px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 10px 0px 10px;
+        padding-left: 20px;
+        padding-right: 0px;
     }
+
 
     .arrow_left {
         margin-top: 20px;
@@ -1002,7 +1176,7 @@ footer .text_block {
     .pet_card {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-left: 70px;
     }
 
     h4 {
@@ -1017,6 +1191,54 @@ footer .text_block {
         margin-top: 42px;
         margin-bottom: 42px;
     }
+
+    /* -----Modal window----- */
+
+    #more_container {
+        width: 240px;
+        height: 341px;
+    }
+
+    .modal_close {
+        position: absolute;
+        top: -17%;
+        right: -13.5%;
+    }
+
+    .description_img {
+        display: none;
+    }
+
+    .description_content {
+        width: 220px;
+        padding: 0px 10px 88px 10px;
+    }
+
+    .description_name {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .description_type {
+        padding-bottom: 0px;
+    }
+
+    .description_more {
+        font-size: 13px;
+        line-height: 110%;
+        text-align: justify;
+        letter-spacing: 0.06em;
+        margin-bottom: 0;
+    }
+
+    .information {
+        letter-spacing: 0.06em;
+    }
+
+    li {
+        padding: 5px 0px 0px 0px;
+        margin-left: -25px;
+    }    
 
     /* -----HELP BLOCK----- */
     .help_block {
@@ -1043,7 +1265,7 @@ footer .text_block {
 
     .help_item {
         margin-top: -20px;
-        margin-left: -33px;
+        margin-left: 0px;
         margin-right: 3px;
         width: 130px;
         text-align: center;
@@ -1091,6 +1313,7 @@ footer .text_block {
         text-align: center;
         font-size: 25px;
         line-height: 130%;
+        max-width: 210px;
     }
 
     h5 {

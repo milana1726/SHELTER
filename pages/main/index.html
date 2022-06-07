@@ -11,7 +11,7 @@
     <div class="main_wrapper">
         <div class="wrapper">
             <header>
-                    <div class="header_logo">
+                <div class="header_logo">
                     <a href="../main/index.html"><h1>Cozy House</h1></a>
                     <p>Shelter for pets in Boston</p>
                 </div>
@@ -24,10 +24,10 @@
                     </div>
                 </nav>
                 <a href="javascript:void(0);" id="icon_nav_hidden" onclick="myFunction()">
-                    <img src="../../assets/icons/Burger.svg" alt="icon_burger">
+                    <img src="../../assets/icons/Burger_2.svg" alt="icon_burger">
                 </a>
                 <nav id="nav_origin">
-                    <div class="nav_menu">
+                    <div id="nav_menu" class="nav_menu">
                         <a class="nav_item item_active" href="#about_block">About the shelter</a>
                         <a class="nav_item" href="../pets/index.html">Our pets</a>
                         <a class="nav_item" href="#help_block">Help the shelter</a>
@@ -87,35 +87,12 @@
                         <h3>Our friends who <br>
                             are looking for a house</h3>
                         <div class="slider_pets">
-                            <button type="button" onclick="" class="arrow_left">
+                            <button id="btn_active" type="button" onclick="" class="arrow_left">
                                 <img class="arrow" src="../../assets/icons/arrow_left.svg" alt="arrow_left">
                             </button>
-                            <div class="pet_card card_space">
-                                <img src="../../assets/images/pets-katrine.png" alt="pet_photo">
-                                <h4>Katrine</h4>
-                                <button type="button" onclick="" class="button_more">Learn more</button>
+                            <div class="slider_pets_container">
                             </div>
-                            <div class="pet_card card_space space">
-                                <img src="../../assets/images/pets-jennifer.png" alt="pet_photo">
-                                <h4>Jennifer</h4>
-                                <button type="button" onclick="" class="button_more">Learn more</button>
-                            </div>
-                            <div id = "hide" class="pet_card">
-                                <img src="../../assets/images/pets-woody.png" alt="pet_photo">
-                                <h4>Woody</h4>
-                                <button type="button" onclick="" class="button_more">Learn more</button>
-                            </div>
-                            <button type="button" onclick="" class="arrow_right">
-                                <img class="arrow" src="../../assets/icons/arrow_right.svg" alt="arrow_right">
-                            </button>
-                        </div>
-                        <div class="slider_pets_hidden">
-                            <div class="pet_card">
-                                <img src="../../assets/images/pets-katrine.png" alt="pet_photo">
-                                <h4>Katrine</h4>
-                                <button type="button" onclick="" class="button_more">Learn more</button>
-                            </div>
-                            <button type="button" onclick="" class="arrow_left">
+                            <button id="btn_hidden" type="button" onclick="" class="arrow_left">
                                 <img class="arrow" src="../../assets/icons/arrow_left.svg" alt="arrow_left">
                             </button>
                             <button type="button" onclick="" class="arrow_right">
@@ -125,6 +102,12 @@
                         <button type="button" onclick="document.location='../pets/index.html'" class="button_rest">
                             Get to know the rest
                         </button>
+                    </div>
+                    <div id="modal_container">
+                        <div id="more_container">
+                            <div class="pet_description">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

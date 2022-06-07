@@ -85,10 +85,6 @@ h1:hover {
     letter-spacing: 0.1em;
 }
 
-#nav_hidden, #icon_nav_hidden {
-    display: none;
-}
-
 .nav_menu {
     display: flex;
 	flex-direction: row;
@@ -115,7 +111,7 @@ h1:hover {
 }
 
 
-.burger_menu {
+#burger_menu {
     display: none;
 }
 
@@ -1006,28 +1002,85 @@ footer .text_block {
 }
 
 @media (min-width: 320px) and (max-width: 767.98px) {
-    #nav_origin {
-        display: none;
+
+    #header_logo {
+        width: 257px;
     }
 
-    #icon_nav_hidden {
+   #header_logo h1 {
+       display: block;
+       width: 257px;
+   }
+
+     #burger_menu {
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+        margin-left: 100px;
+    }
+
+    #burger_menu .header_logo {
+        display: block;
+        margin-top: -35px;
+        margin-left: 10px;
+    }
+
+    #icon_nav_hidden img{
         display: block;
         height: 22px;
         width: 30px;
-        margin-top: 18px;
-        margin-right: 43px;
-
+        margin-top: 25px;
+        margin-right: 35px;
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        cursor: pointer;
     }
 
-    .nav_menu_hidden {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .nav_burger {
         width: 320px;
         height: 823px;
-        background: #292929;
-
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        list-style: none;
+        padding-top: 4rem;
     }
+
+    .nav_item {
+        display: block;
+        margin: 43px 39px 0px 39px;
+        font-size: 1.8rem;
+        text-decoration: none;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 160%;
+        text-align: center;
+    }
+
+    .item_active {
+        margin-top: 158px;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #292929;
+    }
+     
 
     .main_wrapper {
         padding-top: 30px;
@@ -1039,8 +1092,9 @@ footer .text_block {
     }
 
     /* -----NOT ONLY BLOCK----- */
+
     .not_only_content {
-        margin-top: 26px;
+        margin-top: -788px;
         margin-left: 10px;
         display: flex;
         flex-direction: column;
@@ -1408,6 +1462,5 @@ footer .text_block {
     .contacts a img,
     .locations a img{
         margin-top: 5px;
-    }  
-
+    }
 }

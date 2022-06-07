@@ -11,21 +11,27 @@
     <div class="main_wrapper">
         <div class="wrapper">
             <header>
-                <div class="header_logo">
+                <div id="header_logo" class="header_logo">
                     <a href="../main/index.html"><h1>Cozy House</h1></a>
                     <p>Shelter for pets in Boston</p>
                 </div>
-                <nav id="nav_hidden">
-                    <div class="nav_menu_hidden">
-                        <a class="nav_item_hidden item_active" href="#about_block">About the shelter</a>
-                        <a class="nav_item_hidden " href="../pets/index.html">Our pets</a>
-                        <a class="nav_item_hidden " href="#help_block">Help the shelter</a>
-                        <a class="nav_item_hidden " href="#contacts_block">Contacts</a>
-                    </div>
-                </nav>
-                <a href="javascript:void(0);" id="icon_nav_hidden" onclick="myFunction()">
-                    <img src="../../assets/icons/Burger_2.svg" alt="icon_burger">
-                </a>
+                <div id="burger_menu">
+                    <nav id="nav_hidden">
+                        <div class="nav_burger">
+                            <div class="header_logo">
+                                <a href="../main/index.html"><h1>Cozy House</h1></a>
+                                <p>Shelter for pets in Boston</p>
+                            </div>
+                            <a class="nav_item item_active" href="#about_block">About the shelter</a>
+                            <a class="nav_item" href="../pets/index.html">Our pets</a>
+                            <a class="nav_item" href="#help_block">Help the shelter</a>
+                            <a class="nav_item" href="#contacts_block">Contacts</a>
+                        </div>
+                    </nav>
+                    <a href="#" id="icon_nav_hidden" onclick="toggleMenu()">
+                        <img class="icon_burger" src="../../assets/icons/Burger.svg" alt="icon_burger">
+                    </a>
+                </div>
                 <nav id="nav_origin">
                     <div id="nav_menu" class="nav_menu">
                         <a class="nav_item item_active" href="#about_block">About the shelter</a>

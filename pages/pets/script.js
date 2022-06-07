@@ -164,11 +164,28 @@ function removeCards(petsArr, btnInfo) {
     }
 }
 
-function myFunction() {
-    let nav_hidden = document.getElementById("nav_hidden");
-    if (nav_hidden.style.display === "block") {
-        nav_hidden.style.display = "none";
-    } else {
-        nav_hidden.style.display = "block";
-    }
+const menu = document.querySelector(".nav_burger");
+const menuItems = document.querySelectorAll(".nav_item");
+const hamburger= document.querySelector(".icon_nav_hidden");
+const menuIcon = document.querySelector(".icon_burger");
+
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    menuIcon.style.display = "block";
+    menuIcon.style.transform = "rotate(180deg)";
+    menuIcon.src = "../../assets/icons/Burger_2.svg";
+
+  } else {
+    menu.classList.add("showMenu");
+    menuIcon.style.transform = "rotate(90deg)";
+    document.body.style.overflow = 'hidden';
+    menuIcon.src = "../../assets/icons/Burger.svg";
+  }
 }
+
+menuItems.forEach( 
+  function(menuItem) { 
+    menuItem.addEventListener("click", toggleMenu);
+  }
+)
